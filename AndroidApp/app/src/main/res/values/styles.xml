@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="new_AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimaryDark">#366196</item>
+        <item name="colorPrimary">#A7CCF5</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.Userpage.Transparent" parent="new_AppTheme">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="colorPrimary">#A7CCF5</item>
+    </style>
+</resources>
