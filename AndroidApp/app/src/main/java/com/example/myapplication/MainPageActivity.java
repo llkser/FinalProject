@@ -145,9 +145,6 @@ public class MainPageActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.confirm:
                 sendPhoto();
-                Intent intent = new Intent(MainPageActivity.this,ResultPageActivity.class);
-                intent.putExtra("result","0.01-0.001 PPM");
-                startActivityForResult(intent,1);
                 break;
         }
     }
@@ -256,6 +253,9 @@ public class MainPageActivity extends AppCompatActivity implements View.OnClickL
                                 try {
                                     JSONObject res_inform = new JSONObject(res);
                                     Log.d(Tag,res_inform.toString());
+                                    Intent intent = new Intent(MainPageActivity.this,ResultPageActivity.class);
+                                    intent.putExtra("result","1-10 PPM");
+                                    startActivityForResult(intent,1);
                                 } catch (JSONException e) {
                                     e.printStackTrace();
                                 }

@@ -17,7 +17,7 @@ tools:ignore="MissingDefaultResource">
     <com.facebook.drawee.view.SimpleDraweeView
         android:id="@+id/preview"
         android:layout_gravity="center"
-        android:layout_width="270dp"
+        android:layout_width="320dp"
         android:layout_height="360dp"
         fresco:actualImageScaleType="centerCrop"
         fresco:placeholderImage="@drawable/file_default"

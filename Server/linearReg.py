@@ -1,6 +1,5 @@
 from matplotlib import pyplot as plt
 
-#根据y=2*x+b随意写几个数
 X=list(range(-3,4))
 Y=[62,63,67,40,13,10,9]
 Xsum=0.0
@@ -20,7 +19,7 @@ print('the line is y=%f*x+%f' % (k,b) )
 Z=[]
 for i in X:
     Z.append(k*i+b)
-plt.plot(X, Z, label='First Curve')#在当前的对象上进行操作
+plt.plot(X, Z, label='First Curve')
 plt.scatter(X, Y, c='r' , alpha=0.5, marker=(9, 3, 30))
 
 plt.grid(True)
